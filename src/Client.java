@@ -168,6 +168,7 @@ public class Client {
 		System.out.println("2. To send a private message, type '@<username> <message>'");
 		System.out.println("3. To see list of active clients, type ONLINE");
 		System.out.println("4. To logout, type LOGOUT");
+		System.out.println("");
 
 		// Get input from user
 		while(true) {
