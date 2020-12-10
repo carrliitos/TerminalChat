@@ -2,7 +2,7 @@
 > Benzon Carlitos Salazar
 
 ## About
-Terminal-based chat system that utilizes socket programming
+Terminal-based chat system that utilizes socket programming.
 
 ### How to run
 1. Open a terminal, locate the [src](src/) folder, and compile all files
