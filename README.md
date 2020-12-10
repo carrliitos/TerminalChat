@@ -4,7 +4,7 @@
 ## About
 Terminal-based chat system that utilizes socket programming
 
-## How to run
+### How to run
 1. Open a terminal, locate the [src](src/) folder, and compile all files
 ```
 $ javac *.java
@@ -17,3 +17,9 @@ $ java Server
 ```
 $ java Client
 ```
+
+### Example
+## Server Side
+![server side](imgs/server.png)
+## Client Side
+![client side](imgs/client.png)
