@@ -53,6 +53,7 @@ Hello Carlitos! Welcome to the UWW chat room.
 2. To send a private message, type '@<username> <message>'
 3. To see list of active clients, type ONLINE
 4. To logout, type LOGOUT
+
 [Carlitos]>> 00:09:54  *** Benzon has joined. *** 
 [Carlitos]>> hello Benzon!
 [Carlitos]>> 00:10:01 Carlitos: hello Benzon!
@@ -81,6 +82,7 @@ Hello Benzon! Welcome to the UWW chat room.
 2. To send a private message, type '@<username> <message>'
 3. To see list of active clients, type ONLINE
 4. To logout, type LOGOUT
+
 [Benzon]>> 00:10:01 Carlitos: hello Benzon!
 [Benzon]>> online
 [Benzon]>> 
