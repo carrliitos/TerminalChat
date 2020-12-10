@@ -22,4 +22,5 @@ $ java Client
 ## Server Side
 ![server side](imgs/server.png)
 ## Client Side
-![client side](imgs/client.png)
+![client 1 side](imgs/client1.png)
+![client 2 side](imgs/client2.png)
