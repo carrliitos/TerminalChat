@@ -278,7 +278,7 @@ public class Server {
 						serverIsRunning = false;
 						break;
 					case Chat.ONLINE : 
-						writeMessage("\nList of users connected at " + sdf.format(new Date()) + "\n");
+						writeMessage("List of users connected at " + sdf.format(new Date()) + "\n");
 						
 						// send list of active Clients
 						for(int i = 0; i < clientList.size(); ++i) {
