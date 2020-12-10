@@ -171,7 +171,7 @@ public class Client {
 
 		// Get input from user
 		while(true) {
-			System.out.print(">> ");
+			System.out.print("[" + username + "]" + ">> ");
 			String msg = scanner.nextLine();
 
 			// message-based statements
@@ -199,7 +199,7 @@ public class Client {
 					String msg = (String) inputStream.readObject();
 					// Print the message
 					System.out.print(msg);
-					System.out.print(">> ");
+					System.out.print("[" + username + "]" + ">> ");
 				}catch(IOException ioE) {
 					display(notification + "Server has closed: " + ioE + notification);
 					break;

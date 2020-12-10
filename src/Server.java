@@ -105,7 +105,7 @@ public class Server {
 		// timestamp
 		String time = sdf.format(new Date());
 		// Check if the message is private
-		String[] w = message.split(" ",3);
+		String[] w = message.split(" ", 3);
 
 		boolean isPrivate = false;
 		if(w[1].charAt(0) == '@') 
@@ -115,14 +115,14 @@ public class Server {
 		if(isPrivate == true) {
 			String toCheck = w[1].substring(1, w[1].length());
 			message = w[0] + w[2];
-			String messageLF = time + " " + message + "\n";
+			String messageLF = time + " " + "[Private] " + message + "\n";
 			boolean found = false;
 
 			// we loop in reverse order to find the mentioned username
 			for(int i = clientList.size(); --i >= 0;) {
 				ClientThread thread1 = clientList.get(i);
 				String check = thread1.getUsername();
-				
+
 				if(check.equals(toCheck)) {
 					// write to the Client, if fails, remove it from the list
 					if(!thread1.writeMessage(messageLF)) {
@@ -267,9 +267,9 @@ public class Server {
 				// Different actions based on the message
 				switch(chatMessage.getType()) {
 					case Chat.MESSAGE :
-						boolean confirmation = broadcast(username + ": " + message.toUpperCase());
+						boolean confirmation = broadcast(username + ": " + message);
 						if(confirmation == false){
-							String msg = notification + "Sorry. No such user exists." + notification;
+							String msg = notification + "Sorry. No such user exists." + notification + "\n";
 							writeMessage(msg);
 						}
 						break;
@@ -278,7 +278,7 @@ public class Server {
 						serverIsRunning = false;
 						break;
 					case Chat.ONLINE : 
-						writeMessage("List of users connected at " + sdf.format(new Date()) + "\n");
+						writeMessage("\nList of users connected at " + sdf.format(new Date()) + "\n");
 						
 						// send list of active Clients
 						for(int i = 0; i < clientList.size(); ++i) {
